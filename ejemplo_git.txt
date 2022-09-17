@@ -1,0 +1,5 @@
+biomas del paraguay
+
+- git init (revisar el source control y darle al signo "+")
+- git log
+- git reset (--hard // --soft)

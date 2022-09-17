@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-300">
+    <h1 class="text-3xl text-teal-700 font-serif">Hola, soy un cerdito</h1>
+    <h3 class="texto-verde text-lg">{{ lista_nombres[0] }} {{ lista_nombres[1] }}</h6>
+
+    <!-- {% for dato in datos %}
+        <p>{{ dato["nombre"] }}</p>
+    {% endfor %} -->
+
+    <img src="{{ url_for('static', filename='images.jpg') }}" alt="esto-es-un-gatito-enojado">
+    <img src="https://i.pinimg.com/550x/9e/04/b7/9e04b774706b25c622bdf56b080d2bb8.jpg " alt="esto-es-un-gatito-enojado" class="w-52">
+
+    <p class="text-xl">Crea un enlace a
+        <a href="https://www.mozilla.org/es-ES/"
+           title="El mejor lugar para encontrar más información acerca de la misión de Mozilla
+                  y cómo contribuir">la página de inicio de Mozilla</a>.
+    </p>
+
+    <p class="text-xl"><a href="https://firefox.com/" target="_blank">
+        Haz clic aquí
+      </a>
+      para descargar Firefox
+    </p>
+
+    
+    <!-- <div class="m-3 border border-2 border-zinc-500 max-w-sm p-3">
+        <img src="https://i.pinimg.com/550x/9e/04/b7/9e04b774706b25c622bdf56b080d2bb8.jpg" alt="esto-es-un-gatito-enojado" class="w-52 block m-auto">
+        <h1 class="text-3xl text-teal-700 text-center">Tanjira</h1>
+        <p class="text-lg text-cyan-500">Nombre: {{ datos[0] }}</p>
+        <p class="text-lg text-cyan-500">Apellido: {{ datos[1] }}</p>
+        <p class="text-lg text-cyan-500">Correo: {{ datos[2] }}</p>
+    </div>
+
+    <div class="m-3 border border-2 border-zinc-500 max-w-sm p-3">
+        <img src="https://pbs.twimg.com/profile_images/739367766243713024/aARhrXd-_400x400.jpg" alt="esto-es-un-gatito-enojado" class="w-52 block m-auto">
+        <h1 class="text-3xl text-teal-700 text-center">Marsopita</h1>
+        <p class="text-lg text-cyan-500">Nombre: Sra. Marsopa</p>
+        <p class="text-lg text-cyan-500">Apellido: de Atlantico</p>
+        <p class="text-lg text-cyan-500">Correo: marsopa@pacifica.com</p>
+    </div> -->
+       
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Bella</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-serif bg-gray-100">
+    <h1 class="text-center text-4xl mb-10 mt-5">Personajes de Rick and Morty</h1>
+    <div class="grid grid-cols-4 gap-4">
+        {% for personaje in results %}
+        <div class="max-w-sm rounded overflow-hidden border border-zinc-500 shadow-lg">
+            <img class="w-full" src="{{ personaje['image'] }}" alt="puppy">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">{{ personaje['name'] }}</div>
+              <!-- <p class="text-gray-700 text-base">
+                A Firulais le gusta correr, atrapar la pelota y molestar a los gatos.
+              </p> -->
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Status: {{ personaje['status'] }}</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Especie: {{ personaje['species'] }}</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Sexo: {{ personaje['gender'] }}</span>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
